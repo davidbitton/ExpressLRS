@@ -16,6 +16,13 @@ static char modelString[] = "000";
 static char pwmModes[] = "50Hz;60Hz;100Hz;160Hz;333Hz;400Hz;10kHzDuty;On/Off;DShot;Serial RX;Serial TX;I2C SCL;I2C SDA;Serial2 RX;Serial2 TX";
 #endif
 
+#if defined(HAS_GYRO)
+// Must match gyro_sensor_align_t
+static const char *gyroAlign = "0;90;180;270;Flip;F90;F180;F270";
+// Must match gyro.h gyro_mode_t
+static const char *gyroModes = "Off;Normal;SAFE;Hover;Rate;Level";
+#endif
+
 static struct luaItem_selection luaSerialProtocol = {
     {"Protocol", CRSF_TEXT_SELECTION},
     0, // value
@@ -104,6 +111,72 @@ static struct luaItem_string luaELRSversion = {
 
 //---------------------------- WiFi -----------------------------
 
+// --------------------------- Gyro Setup ---------------------------------
+
+#if defined(HAS_GYRO)
+
+static struct luaItem_folder luaGyroModesFolder = {
+    {"Gyro Modes", CRSF_FOLDER},
+};
+
+static struct luaItem_folder luaGyroGainFolder = {
+    {"Gyro Gains", CRSF_FOLDER},
+};
+
+static struct luaItem_selection luaGyroModePos1 = {
+    {"Position 1", CRSF_TEXT_SELECTION},
+    0, // value
+    gyroModes,
+    STR_EMPTYSPACE
+};
+
+static struct luaItem_selection luaGyroModePos2 = {
+    {"Position 2", CRSF_TEXT_SELECTION},
+    0, // value
+    gyroModes,
+    STR_EMPTYSPACE
+};
+
+static struct luaItem_selection luaGyroModePos3 = {
+    {"Position 3", CRSF_TEXT_SELECTION},
+    0, // value
+    gyroModes,
+    STR_EMPTYSPACE
+};
+
+static struct luaItem_selection luaGyroModePos4 = {
+    {"Position 4", CRSF_TEXT_SELECTION},
+    0, // value
+    gyroModes,
+    STR_EMPTYSPACE
+};
+
+static struct luaItem_selection luaGyroModePos5 = {
+    {"Position 5", CRSF_TEXT_SELECTION},
+    0, // value
+    gyroModes,
+    STR_EMPTYSPACE
+};
+
+static struct luaItem_folder luaGyroSettingsFolder = {
+    {"Gyro Settings", CRSF_FOLDER},
+};
+
+static void luaparamGyroModePos1(struct luaPropertiesCommon *item, uint8_t arg)
+{ config.SetGyroModePos(0, (gyro_mode_t) arg); }
+static void luaparamGyroModePos2(struct luaPropertiesCommon *item, uint8_t arg)
+{ config.SetGyroModePos(1, (gyro_mode_t) arg); }
+static void luaparamGyroModePos3(struct luaPropertiesCommon *item, uint8_t arg)
+{ config.SetGyroModePos(2, (gyro_mode_t) arg); }
+static void luaparamGyroModePos4(struct luaPropertiesCommon *item, uint8_t arg)
+{ config.SetGyroModePos(3, (gyro_mode_t) arg); }
+static void luaparamGyroModePos5(struct luaPropertiesCommon *item, uint8_t arg)
+{ config.SetGyroModePos(4, (gyro_mode_t) arg); }
+
+#endif // USE_GYRO
+
+// --------------------------- Gyro Setup ---------------------------------
+
 //---------------------------- Output Mapping -----------------------------
 
 #if defined(GPIO_PIN_PWM_OUTPUTS)
@@ -153,6 +226,31 @@ static struct luaItem_command luaSetFailsafe = {
     {"Set Failsafe Pos", CRSF_COMMAND},
     lcsIdle, // step
     STR_EMPTYSPACE
+};
+
+const char STR_US[] = "us";
+static struct luaItem_int16 luaMappingChannelLimitMin = {
+  {"Limit Min us", CRSF_UINT16},
+  {
+    {
+      0U,  // value
+      0U,  // min
+      65535U, // max
+    }
+  },
+  STR_US
+};
+
+static struct luaItem_int16 luaMappingChannelLimitMax = {
+  {"Limit Max us", CRSF_INT16},
+  {
+    {
+      2135, // value
+      1501, // min
+      2135, // max
+    }
+  },
+  STR_US
 };
 
 #endif // GPIO_PIN_PWM_OUTPUTS
@@ -463,6 +561,7 @@ static void luaparamSetFailsafe(struct luaPropertiesCommon *item, uint8_t arg)
 
   sendLuaCommandResponse((struct luaItem_command *)item, newStep, msg);
 }
+#include "logging.h"
 
 #endif // GPIO_PIN_PWM_OUTPUTS
 
@@ -548,6 +647,28 @@ static void registerLuaParameters()
     registerLUAParameter(&luaMappingOutputMode, &luaparamMappingOutputMode, luaMappingFolder.common.id);
     registerLUAParameter(&luaMappingInverted, &luaparamMappingInverted, luaMappingFolder.common.id);
     registerLUAParameter(&luaSetFailsafe, &luaparamSetFailsafe);
+
+    #if defined(HAS_GYRO)
+    registerLUAParameter(&luaGyroModesFolder);
+    registerLUAParameter(&luaGyroModePos1, &luaparamGyroModePos1, luaGyroModesFolder.common.id);
+    registerLUAParameter(&luaGyroModePos2, &luaparamGyroModePos2, luaGyroModesFolder.common.id);
+    registerLUAParameter(&luaGyroModePos3, &luaparamGyroModePos3, luaGyroModesFolder.common.id);
+    registerLUAParameter(&luaGyroModePos4, &luaparamGyroModePos4, luaGyroModesFolder.common.id);
+    registerLUAParameter(&luaGyroModePos5, &luaparamGyroModePos5, luaGyroModesFolder.common.id);
+
+    registerLUAParameter(&luaGyroGainFolder);
+
+    registerLUAParameter(&luaGyroSettingsFolder);
+    registerLUAParameter(&luaGyroAlign, &luaparamGyroAlign, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroCalibrate, &luaparamGyroCalibrate, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroSubtrims, &luaparamGyroSubtrims, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroSAFEPitch, &luaparamGyroSAFEPitch, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroSAFERoll, &luaparamGyroSAFERoll, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroLevelPitch, &luaparamGyroLevelPitch, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroLevelRoll, &luaparamGyroLevelRoll, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroLaunchAngle, &luaparamGyroLaunchAngle, luaGyroSettingsFolder.common.id);
+    registerLUAParameter(&luaGyroHoverStrength, &luaparamGyroHoverStrength, luaGyroSettingsFolder.common.id);
+    #endif
   }
 #endif
 
@@ -612,6 +733,18 @@ static int event()
     setLuaUint8Value(&luaMappingChannelIn, pwmCh->val.inputChannel + 1);
     setLuaTextSelectionValue(&luaMappingOutputMode, pwmCh->val.mode);
     setLuaTextSelectionValue(&luaMappingInverted, pwmCh->val.inverted);
+    const rx_config_pwm_limits_t *limits = config.GetPwmChannelLimits(luaMappingChannelOut.properties.u.value - 1);
+    setLuaUint16Value(&luaMappingChannelLimitMin, (uint16_t) limits->val.min);
+    setLuaUint16Value(&luaMappingChannelLimitMax, (uint16_t) limits->val.max);
+
+    #if defined(HAS_GYRO)
+    const rx_config_gyro_mode_pos_t *gyroModes = config.GetGyroModePos();
+    setLuaTextSelectionValue(&luaGyroModePos1, gyroModes->val.pos1);
+    setLuaTextSelectionValue(&luaGyroModePos2, gyroModes->val.pos2);
+    setLuaTextSelectionValue(&luaGyroModePos3, gyroModes->val.pos3);
+    setLuaTextSelectionValue(&luaGyroModePos4, gyroModes->val.pos4);
+    setLuaTextSelectionValue(&luaGyroModePos5, gyroModes->val.pos5);
+    #endif // HAS_GYRO
   }
 #endif
 
