@@ -1,0 +1,10 @@
+# Target labels
+ native
+# Source files and their labels
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/native-configure
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/native-configure.rule
+/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-configure.rule
+/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-patch.rule
+/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-update.rule
+/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-download.rule
+/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-mkdir.rule

@@ -1,0 +1,10 @@
+# Target labels
+ arm-none-eabi
+# Source files and their labels
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi-configure
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi-configure.rule
+/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-configure.rule
+/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-patch.rule
+/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-update.rule
+/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-download.rule
+/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-mkdir.rule

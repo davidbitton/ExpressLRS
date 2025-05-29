@@ -1,0 +1,11 @@
+{
+    "python-envs.pythonProjects": [],
+    "cmake.configureArgs": [
+        "-DPCB=X7",
+        "-DPCBREV=GX12",
+        "-DCMAKE_PREFIX_PATH=/usr/local/opt/qt@5",
+        "-DARM_TOOLCHAIN_DIR=/usr/local/bin/",
+        "-DPYTHON_EXECUTABLE=/Users/davidbbitton/src/edgetx/.venv/bin/python3"
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:venv"
+}

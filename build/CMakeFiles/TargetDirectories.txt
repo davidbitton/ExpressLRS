@@ -1,0 +1,16 @@
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/native.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/native-configure.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi-configure.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/configure.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/libsimulator.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/simulator.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/simu.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/companion.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/gtests-radio.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/tests-radio.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/bootloader.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/firmware.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/firmware-size.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/edit_cache.dir
+/Users/davidbbitton/src/edgetx/build/CMakeFiles/rebuild_cache.dir

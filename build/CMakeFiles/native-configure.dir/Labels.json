@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/CMakeFiles/native-configure"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/CMakeFiles/native-configure.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-configure.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-patch.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-update.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-download.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/native-prefix/src/native-stamp/native-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"native"
+		],
+		"name" : "native-configure"
+	}
+}

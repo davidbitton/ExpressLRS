@@ -1,0 +1,36 @@
+radio/src/CMakeFiles/firmware.dir/thirdparty/Lua/src/lctype.c.obj: \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/Lua/src/lctype.c \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/Lua/src/lprefix.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/Lua/src/lctype.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/Lua/src/lua.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stdarg.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/Lua/src/luaconf.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/limits.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/syslimits.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/limits.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stdbool.h \
+ /Users/davidbbitton/src/edgetx/radio/src/debug.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/float.h \
+ /Users/davidbbitton/src/edgetx/radio/src/definitions.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/inttypes.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
+ /Users/davidbbitton/src/edgetx/radio/src/targets/common/arm/stm32/f4/memory_sections.h \
+ /Users/davidbbitton/src/edgetx/radio/src/rtc.h \
+ /Users/davidbbitton/src/edgetx/radio/src/dump.h \
+ /Users/davidbbitton/src/edgetx/radio/src/serial.h \
+ /Users/davidbbitton/src/edgetx/radio/src/hal/serial_port.h \
+ /Users/davidbbitton/src/edgetx/radio/src/hal/serial_driver.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/Lua/src/llimits.h

@@ -1,0 +1,34 @@
+radio/src/CMakeFiles/freertos.dir/thirdparty/FreeRTOS/stream_buffer.c.obj: \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/stream_buffer.c \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/string.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/strings.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/FreeRTOS.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+ /Users/davidbbitton/src/edgetx/radio/src/FreeRTOSConfig.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/projdefs.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/portable.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/deprecated_definitions.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/portable/GCC/ARM_CM4F/portmacro.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/mpu_wrappers.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/task.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/list.h \
+ /Users/davidbbitton/src/edgetx/radio/src/thirdparty/FreeRTOS/include/stream_buffer.h

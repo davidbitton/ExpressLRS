@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/CMakeFiles/arm-none-eabi-complete.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-build.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-configure.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-download.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-install.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-mkdir.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-patch.rule"
+		},
+		{
+			"file" : "/Users/davidbbitton/src/edgetx/build/arm-none-eabi-prefix/src/arm-none-eabi-stamp/arm-none-eabi-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"arm-none-eabi"
+		],
+		"name" : "arm-none-eabi"
+	}
+}
