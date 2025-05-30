@@ -10,4 +10,4 @@ super_defines.txt
 include/WebContent.h
 include/flashdiscrim.h
 .DS_Store
-targets/build_config.ini
+targets/board_config.ini
